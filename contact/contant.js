@@ -76,14 +76,5 @@ placeRiding.forEach((options) => {
   options.addEventListener("click", function () {
     let placeVideo = document.getElementById("placeVideo");
     placeVideo.src = `../images/videos/${options.value}.mp4`;
-    console.log(options.value);
   });
 });
-
-const reset = document.getElementById("reset");
-reset.addEventListener("click", function () {
-  document.querySelector(".orderPhoto").style.display = "none";
-});
-const clock = () => {
-  setInterval(updaeTime, 1000);
-};
