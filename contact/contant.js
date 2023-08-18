@@ -56,7 +56,7 @@ listProduct.forEach((options) => {
   options.addEventListener("click", function () {
     document.querySelector(".orderPhoto").style.display = "";
 
-    photoProduct.src = `./products/images/${options.value}.jpg`;
+    photoProduct.src = `../products/images/${options.value}.jpg`;
     console.log(options.value);
   });
 });
