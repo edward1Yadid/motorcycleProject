@@ -56,7 +56,7 @@ listProduct.forEach((options) => {
   options.addEventListener("click", function () {
     document.querySelector(".orderPhoto").style.display = "";
 
-    photoProduct.src = `../products/images/${options.value}.jpg`;
+    photoProduct.src = `./products/images/${options.value}.jpg`;
     console.log(options.value);
   });
 });
@@ -75,6 +75,12 @@ const placeRiding = document.getElementById("placeRiding").childNodes;
 placeRiding.forEach((options) => {
   options.addEventListener("click", function () {
     let placeVideo = document.getElementById("placeVideo");
-    placeVideo.src = `../products/images/videos/${options.value}.mp4`;
+    placeVideo.src = `./videos/${options.value}.mp4`;
+    console.log(options.value);
   });
+});
+
+const reset = document.getElementById("reset");
+reset.addEventListener("click", function () {
+  document.querySelector(".orderPhoto").style.display = "none";
 });
