@@ -56,7 +56,7 @@ listProduct.forEach((options) => {
   options.addEventListener("click", function () {
     document.querySelector(".orderPhoto").style.display = "";
 
-    photoProduct.src = `./products/images/${options.value}.jpg`;
+    photoProduct.src = `../products/images/${options.value}.jpg`;
     console.log(options.value);
   });
 });
@@ -67,7 +67,7 @@ listDrivers.forEach((options) => {
   options.addEventListener("click", function () {
     document.querySelector(".orderPhoto").style.display = "";
 
-    photoDriver.src = `./products/images/${options.value}.jpg`;
+    photoDriver.src = `../products/images/${options.value}.jpg`;
   });
 });
 
@@ -75,7 +75,7 @@ const placeRiding = document.getElementById("placeRiding").childNodes;
 placeRiding.forEach((options) => {
   options.addEventListener("click", function () {
     let placeVideo = document.getElementById("placeVideo");
-    placeVideo.src = `./images/videos/${options.value}.mp4`;
+    placeVideo.src = `../images/videos/${options.value}.mp4`;
     console.log(options.value);
   });
 });
