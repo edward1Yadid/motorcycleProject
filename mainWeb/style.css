@@ -1,0 +1,151 @@
+/*gemeral styling*/
+
+:root {
+    --primary-100: #1f1549;
+    --primary-200: #3024cb;
+    --primary-300: #9fa5b1;
+    --primary-400: #0f5852;
+    --primary: #eeee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 1.6;
+    background-color: var(--primary-400);
+    color: var(--primary-100);
+    background-image: url(/logINproject/images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+
+}
+
+#navBar {
+
+    height: 80px;
+    opacity: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 10px 2px 10px;
+    margin-bottom: 10px;
+    position: fixed;
+    width: 100%;
+
+}
+
+#Logo {
+    width: 100px;
+    height: inherit;
+
+
+}
+
+#navBar a {
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--primary-100);
+}
+
+.navA a:hover {
+    border: 3px solid rgba(203, 195, 208, 1);
+    padding: 5px;
+
+    ;
+}
+
+.navA {
+    display: flex;
+    flex-direction: row;
+    gap: 4.625rem;
+
+}
+
+hi,
+h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    font-weight: 900;
+
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 1rem;
+}
+
+.backColorbrownLight {}
+
+.backColorbrownDark {
+    color: var(--primary-100);
+
+}
+
+.backColorbrownOpecity {
+    color: var(--primary-100);
+
+}
+
+.backColorbrownDark h2,
+.backColorbrownOpecity h2 {
+    color: var(--primary-100);
+
+}
+
+header,
+section {
+    padding: 3rem 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 1128px);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container-narrow {
+    max-width: 35rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+    gap: 100PX;
+
+}
+
+@media screen and (min-width:40em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split>* {
+        flex-basis: 100%;
+    }
+
+
+}

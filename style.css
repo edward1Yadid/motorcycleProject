@@ -1,151 +1,132 @@
-/*gemeral styling*/
-
-:root {
-    --primary-100: #1f1549;
-    --primary-200: #3024cb;
-    --primary-300: #9fa5b1;
-    --primary-400: #0f5852;
-    --primary: #eeee;
-}
+/* general styling */
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+
+
 }
 
 body {
-    font-family: "roboto", sans-serif;
-    font-weight: 300;
-    font-size: 21px;
-    line-height: 1.6;
-    background-color: var(--primary-400);
-    color: var(--primary-100);
-    background-image: url(/logINproject/images/background.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
 
+
+    height: 90vh;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E8E8E8;
 }
 
-#navBar {
 
-    height: 80px;
-    opacity: 3;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 10px 2px 10px;
-    margin-bottom: 10px;
-    position: fixed;
-    width: 100%;
 
-}
+
 
 #Logo {
-    width: 100px;
-    height: inherit;
-
-
+    width: 500px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    height: 200px;
 }
 
-#navBar a {
-    text-decoration: none;
-    font-size: 30px;
-    color: var(--primary-100);
+
+.logoFloat {
+    float: left;
+    font-size: 2.25rem;
+    color: white;
+    font-weight: bold;
 }
 
-.navA a:hover {
-    border: 3px solid rgba(203, 195, 208, 1);
-    padding: 5px;
+#formLogin {
 
-    ;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+    height: 100vh;
+    gap: 2.25rem;
 }
 
-.navA {
+
+.logInInputs {
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 50px;
+    border-radius: 10px;
+    position: relative;
+    mix-blend-mode: multiply;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(5px);
+    background: radial-gradient(circle, rgba(149, 99, 255, 1) 10%, rgba(240, 240, 240, 1) 40%);
+}
+
+.emailInput,
+.passworsdInput {
+
+    display: flex;
+    flex-direction: column;
+    gap: .3125rem;
+}
+
+.checkbox {
     display: flex;
     flex-direction: row;
-    gap: 4.625rem;
+    gap: 3.3125rem;
+}
+
+.passwordForgetable {
+    text-decoration: unset;
 
 }
 
-hi,
-h2,
-h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1;
-    font-weight: 900;
-
+.passwordForgetable:visited {
+    color: #1a74a7;
 
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
-
-h2,
-h3,
-p {
-    margin-bottom: 1rem;
-}
-
-.backColorbrownLight {}
-
-.backColorbrownDark {
-    color: var(--primary-100);
-
-}
-
-.backColorbrownOpecity {
-    color: var(--primary-100);
-
-}
-
-.backColorbrownDark h2,
-.backColorbrownOpecity h2 {
-    color: var(--primary-100);
-
-}
-
-header,
-section {
-    padding: 3rem 0;
-}
-
-.container {
-    margin-inline: auto;
-    width: min(90%, 1128px);
+#accountMake {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 3.3125rem;
+
 
 }
 
-.text-center {
+.headerForm {
     text-align: center;
-}
-
-.container-narrow {
-    max-width: 35rem;
-}
-
-.split {
-    display: flex;
-    flex-direction: column;
-    gap: 100PX;
 
 }
 
-@media screen and (min-width:40em) {
-    .split {
-        flex-direction: row;
-    }
+#email,
+#password {
+    background: transparent;
+    border: unset;
+}
 
-    .split>* {
-        flex-basis: 100%;
-    }
 
+#logoEmail,
+#logoPassowrd {
+    position: absolute;
+    left: 290px;
+
+}
+
+#btnLogin {
+    color: white;
+    background-color: rgba(5, 1, 49, 0.882);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+#exitLogo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(44, 36, 36);
+    color: white;
+    padding: 10px;
+    border-radius: 0px 10px;
 
 }
