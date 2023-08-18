@@ -45,7 +45,7 @@ function showmotorCylcle() {
     
         <button type="submit" class="Productbtn ${product.id}">פרטים</button>
       </div>
-          <img src="/logINproject/products/images/${product.model}.jpg" alt="C600">
+          <img src="/products/images/${product.model}.jpg" alt="C600">
     </div>
   `;
   });
@@ -86,7 +86,7 @@ btn.forEach((button) => {
         </div>
         
         <div id="photoAndColor">
-           <img src="/logINproject/products/images/${
+           <img src="/products/images/${
              motorCylcleArray[idProduct - 1].model
            }.jpg" alt="C600">
           

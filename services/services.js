@@ -41,7 +41,7 @@ function drawComment() {
                 <div class="top-Clients">
 
                     <div class="nameAndlogo">
-                        <img src="/logINproject/images/${client.photo}.jpg" alt="logo" >
+                        <img src="/images/${client.photo}.jpg" alt="logo" >
                         <div><span>${client.name}</span>
                             <p>${client.nicename}</p>
                         </div>
@@ -50,7 +50,7 @@ function drawComment() {
 
 
                     <div>
-                        <img src="/logINproject/images/rating.jpg" alt="rating">
+                        <img src="/images/rating.jpg" alt="rating">
                     </div>
 
                 </div>
