@@ -50,7 +50,7 @@ function drawComment() {
 
 
                     <div>
-                        <img src="/images/rating.jpg" alt="rating">
+                        <img src="../images/rating.jpg" alt="rating">
                     </div>
 
                 </div>
