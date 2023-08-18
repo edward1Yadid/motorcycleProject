@@ -75,6 +75,6 @@ const placeRiding = document.getElementById("placeRiding").childNodes;
 placeRiding.forEach((options) => {
   options.addEventListener("click", function () {
     let placeVideo = document.getElementById("placeVideo");
-    placeVideo.src = `../images/videos/${options.value}.mp4`;
+    placeVideo.src = `../products/images/videos/${options.value}.mp4`;
   });
 });
