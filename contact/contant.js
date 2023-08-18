@@ -57,7 +57,6 @@ listProduct.forEach((options) => {
     document.querySelector(".orderPhoto").style.display = "";
 
     photoProduct.src = `../products/images/${options.value}.jpg`;
-    console.log(options.value);
   });
 });
 let photoDriver = document.getElementById("photoDriver");
@@ -76,7 +75,6 @@ placeRiding.forEach((options) => {
   options.addEventListener("click", function () {
     let placeVideo = document.getElementById("placeVideo");
     placeVideo.src = `/videos/${options.value}.mp4`;
-    console.log(options.value);
   });
 });
 
