@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="contant.css">
+    <title>cotact-web</title>
+</head>
+
+<body>
+    <header id="head" style="position: sticky;">
+        <nav id="navBar">
+            <div>
+                <a href="/logINproject/index.html"><img src="/logINproject/images/logo.webp" alt="logo" id="Logo"></a>
+            </div>
+
+
+            <div class="navA"><a href="/logINproject/products/products.html">לכל הדגמים</a>
+                <a href="/logINproject/contact/contant.html">יצירת קשר</a>
+                <a href="/logINproject/services/services.html">שירות</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <div id="containerForm">
+
+        <form id="formContact" action="" method="">
+            <h1 class="header">contant Form for buy Motorcycle</h1>
+
+            <div class="order">
+                <label for="date/time">Date</label>
+                <input type="date" min="2023-08-12" id="date/time" name="date/time">
+            </div>
+
+            <div class="name">
+                <div class="order">
+                    <label for="fisrtName">Fisrt Name</label>
+                    <input type="text" name="fisrtName" id="fisrtName">
+                </div>
+                <div class="order">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+            </div>
+            <div class="order"><label for="PhoneNumber">Phone Number</label>
+                <input type="text" name="PhoneNumber" id="PhoneNumber">
+            </div>
+            <div class="order">
+                <label for="Gender">Gender</label>
+                <select class="listProduct" type="text" name="Gender" id="Gender">
+                    <option class="Male" value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="chooseProduct">
+                <label for="listProduct">which motorcycle you interested?</label>
+                <select name="listProduct" id="listProduct">
+                    <option class="C600 Sport" value="C600 Sport">C600 Sport</option>
+                    <option value="Kawasaki KLR650">Kawasaki KLR650</option>
+                    <option value="Royal Enfield Himalayan">Royal Enfield Himalayan</option>
+                    <option value="Honda Winner">Honda Winner</option>
+                    <option value="Harley-Davidson Toppe">Harley-Davidson Toppe</option>
+                    <option value="Suzuki DR650">Suzuki DR650</option>
+                </select>
+            </div>
+            <div class="order">
+                <label for="Driver">Which driver you want for testing drive?</label>
+                <select class="listProduct" type="text" name="Driver" id="Driver">
+                    <option value="Flora The-Cutter">Flora The-Cutter</option>
+                    <option value="Jhone The-Killer">Jhone The-Killer</option>
+
+                </select>
+            </div>
+            <div class="order">
+                <label for="placeRiding">Which place you prefer for testing drive?</label>
+                <select class="listProduct" type="text" name="placeRiding" id="placeRiding">
+                    <option value="Town">Town</option>
+                    <option value="Jungle">Jungle</option>
+                </select>
+            </div>
+            <div class="order"><button class="btnForm" type="submit">submit</button>
+                <button id="reset" class="btnForm" type="reset">reset</button>
+            </div>
+
+        </form>
+        <div class="orderPhoto">
+            <img class="list item-1" id="photoProduct" src="/logINproject/products/images/C600 Sport.jpg"
+                alt="photoProduct">
+            <img class="list item-2" id="photoDriver" src="/logINproject/products/images/Flora The-Cutter.jpg"
+                alt="photoDriver">
+            <video class="list item-3" id="placeVideo" src="/logINproject/images/videos/town.mp4" autoplay loop></video>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="contant.js"></script>
+</body>
+
+</html>
