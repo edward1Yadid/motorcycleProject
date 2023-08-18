@@ -11,7 +11,7 @@ function loginForm(element) {
   if (!passwordAndEmailisValid(email, password)) {
     alert("Email or password is invalid!");
   } else {
-    window.location.href = "/mainWeb/index.html";
+    window.location.href = "./mainWeb/index.html";
   }
 }
 
